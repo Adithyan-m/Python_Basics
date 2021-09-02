@@ -1,4 +1,4 @@
-"""
+
 #lists
 
 num = [4, 8, 9, 7, 5, 2]
@@ -118,7 +118,6 @@ for index in range(5):               #applying logic
     else:
         print("next one")
 
-
 #exponent function
 print (2**3)       #2^3
 
@@ -134,4 +133,4 @@ a = float(input("enter base :"))
 b = int(input("enter power : "))
 print(expo(a,b))
 
-"""
+
