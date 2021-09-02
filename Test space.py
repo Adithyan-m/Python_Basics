@@ -1,4 +1,4 @@
-
+"""
 #lists
 
 num = [4, 8, 9, 7, 5, 2]
@@ -129,8 +129,11 @@ def expo(base,power):
         result *= base
     return result
 
+
 a = float(input("enter base :"))
 b = int(input("enter power : "))
 print(expo(a,b))
+
+"""
 
 
