@@ -1,4 +1,4 @@
-"""
+
 #lists
 
 num = [4, 8, 9, 7, 5, 2]
@@ -134,6 +134,6 @@ a = float(input("enter base :"))
 b = int(input("enter power : "))
 print(expo(a,b))
 
-"""
+
 
 
