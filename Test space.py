@@ -1,3 +1,4 @@
+"""
 
 #lists
 
@@ -135,5 +136,52 @@ b = int(input("enter power : "))
 print(expo(a,b))
 
 
+# try/except
+try:
+    num = int(input("enter a number : "))       #if a int is not entered then expcept block code will be run
+    number = 10/0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+except ValueError:
+    print("pls make sure entered number is true")
+
+ #or
+
+try:
+    num = int(input("enter a number : "))  # if a int is not entered then expcept block code will be run
+    number = 10 / 0
+except ZeroDivisionError as err:
+    print(err)
+except ValueError as errr:
+    print(errr)
+
+
+
+#files
+
+with open("sample3.txt","r+") as f:
+    for lines in f.readlines():
+        print(lines)
+
+with open("sample3.txt","r+") as f:
+    print(f.readlines()[2])
+
+with open("sample3.txt","r+") as f:
+    print(f.read())
+
+with open("sample3.txt","r+") as f:
+    print(f.readline())
+    print(f.readline())
+    print(f.readline())             #reads one line at a time and moves it to
+
+with open("sample3.txt","r+") as f:     #adds text to end
+    f.write("toby - alfred\n")
+    print(f.readlines())
+
+
+with open("sample3.txt","r+") as f:         #if we use "w" instead, it will overight current file, or it will create file if it doesnt exist
+    f.seek(4)       #moving text to particular line
+    print(f.readline())
+"""
 
 
